@@ -1,0 +1,463 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Scientific Research Department Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Inter", sans-serif;
+    }
+    /* Custom scrollbar for Radio section */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: #f3f4f6;
+      border-radius: 9999px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #6b7280;
+      border-radius: 9999px;
+      border: 2px solid #f3f4f6;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <div class="flex flex-col min-h-screen">
+   <!-- Top Navbar -->
+   <header class="flex items-center justify-between border-b border-gray-300 px-4 py-2">
+    <div class="flex items-center space-x-4">
+     <button aria-label="Menu" class="text-2xl text-gray-600">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+     <img alt="Scientific Research Department logo with blue sky, white cloud, green hills" class="w-8 h-8 rounded" height="32" src="https://storage.googleapis.com/a1aa/image/14bc5db4-7e19-48e3-2acb-10c798498859.jpg" width="32"/>
+     <span class="text-gray-600 text-sm font-normal select-none">
+      Scientific Research Department
+     </span>
+     <i class="fas fa-chevron-right text-gray-600 text-xs">
+     </i>
+     <span class="text-gray-700 text-sm font-normal select-none">
+      Dashboard
+     </span>
+    </div>
+    <div class="flex flex-col items-center text-center text-gray-700 text-xs tracking-widest font-mono select-none">
+     <span class="mb-0.5">
+      J a y k o h 9 2 9
+     </span>
+     <span class="text-[9px] font-normal">
+      (This will be removed once purchased)
+     </span>
+    </div>
+    <div class="flex items-center space-x-6">
+     <button aria-label="More options" class="text-gray-600 text-xl">
+      <i class="fas fa-ellipsis-h">
+      </i>
+     </button>
+     <button aria-label="Settings" class="text-gray-600 text-xl">
+      <i class="fas fa-cog">
+      </i>
+     </button>
+     <img alt="User profile avatar with blue sky, white cloud, green hills" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/fef3dde4-4a36-4ee1-b505-e8c829f88216.jpg" width="32"/>
+    </div>
+   </header>
+   <div class="flex flex-1 overflow-hidden">
+    <!-- Sidebar -->
+    <aside aria-label="Sidebar navigation" class="w-64 border-r border-gray-300 flex flex-col overflow-y-auto">
+     <nav class="flex flex-col py-4 px-3 space-y-1">
+      <a class="flex items-center space-x-3 text-gray-700 hover:text-gray-900 py-2 px-3 rounded-md" href="#">
+       <i class="fas fa-home text-lg">
+       </i>
+       <span class="text-sm font-normal select-none">
+        Home
+       </span>
+      </a>
+      <a aria-current="page" class="flex items-center space-x-3 text-gray-700 bg-gray-200 py-2 px-5 rounded-full select-none" href="#">
+       <i class="fas fa-th-large text-lg">
+       </i>
+       <span class="text-sm font-normal">
+        Dashboard
+       </span>
+      </a>
+      <div class="border-t border-gray-300 mt-4 pt-4 space-y-4">
+       <div class="flex items-center space-x-3">
+        <img alt="Biochemistry Division icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/c7d6f164-d161-438b-f2a3-e14113b8a306.jpg" width="24"/>
+        <div class="flex flex-col leading-tight">
+         <span class="text-gray-700 text-sm font-normal select-none">
+          Biochemistry Division
+         </span>
+         <span class="text-gray-400 text-xs select-none">
+          Scientific Division
+         </span>
+        </div>
+       </div>
+       <div class="flex flex-col space-y-3">
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+        <div class="flex items-center space-x-3">
+         <img alt="Faction icon with blue sky, white cloud, green hills" class="w-6 h-6 rounded" height="24" src="https://storage.googleapis.com/a1aa/image/f9586d83-697d-4b16-a627-0e0b11e955ec.jpg" width="24"/>
+         <div class="flex flex-col leading-tight">
+          <span class="text-gray-700 text-sm font-normal select-none">
+           Faction
+          </span>
+          <span class="text-gray-400 text-xs select-none">
+           Department/Division
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </aside>
+    <!-- Main content -->
+    <main class="flex-1 overflow-y-auto p-6 space-y-6">
+     <!-- Header bar inside main -->
+     <section class="bg-gray-700 rounded-lg p-6 flex items-center justify-between text-white">
+      <div class="flex flex-col space-y-1">
+       <span class="text-gray-600 text-xs tracking-widest select-none">
+        J a y k o h 9 2 9
+       </span>
+       <h1 class="font-extrabold text-2xl leading-none">
+        Dashboard
+       </h1>
+       <p class="text-sm font-normal">
+        Scientific Research Department
+       </p>
+      </div>
+      <div>
+       <i class="fas fa-flask text-4xl">
+       </i>
+      </div>
+     </section>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Left column -->
+      <div class="space-y-6">
+       <!-- Search input -->
+       <form aria-label="Search" class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-xs" role="search">
+        <i class="fas fa-search text-gray-500 text-lg">
+        </i>
+        <input aria-label="Search" class="ml-2 w-full text-sm text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Search..." type="search"/>
+       </form>
+       <!-- Profile card -->
+       <section aria-label="Profile" class="border border-gray-300 rounded-lg p-4 max-w-xs relative">
+        <div class="flex justify-between items-start mb-2">
+         <h2 class="font-extrabold text-lg select-none">
+          Profile
+         </h2>
+         <button aria-label="Profile options" class="text-gray-600 text-xl leading-none">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+         <img alt="Profile avatar with blue sky, white cloud, green hills" class="w-24 h-24 rounded-full" height="96" src="https://storage.googleapis.com/a1aa/image/b188acca-3dd4-4272-f794-6792197cd0fa.jpg" width="96"/>
+         <h3 class="font-extrabold text-center select-none">
+          Kenneth Couture
+         </h3>
+         <p class="text-center text-sm font-normal select-none">
+          Junior Researcher
+         </p>
+         <p class="text-center text-xs select-none">
+          Joined on October 21
+         </p>
+        </div>
+       </section>
+       <!-- Buttons group -->
+       <div class="flex flex-col space-y-2 max-w-xs">
+        <button class="flex items-center space-x-3 border border-gray-400 rounded-md px-4 py-3 text-gray-600 hover:bg-gray-50" type="button">
+         <i class="fas fa-user-circle text-2xl">
+         </i>
+         <div class="flex flex-col text-left">
+          <span class="font-semibold select-none">
+           Training
+          </span>
+          <span class="text-xs text-gray-400 select-none">
+           Learn experiment SOP
+          </span>
+         </div>
+        </button>
+        <button class="flex items-center space-x-3 border border-gray-400 rounded-md px-4 py-3 text-gray-600 hover:bg-gray-50" type="button">
+         <i class="fas fa-flask text-2xl">
+         </i>
+         <div class="flex flex-col text-left">
+          <span class="font-semibold select-none">
+           Test Logs
+          </span>
+          <span class="text-xs text-gray-400 select-none">
+           Explore latest test logs
+          </span>
+         </div>
+        </button>
+        <button class="flex items-center space-x-3 border border-gray-400 rounded-md px-4 py-3 text-gray-600 hover:bg-gray-50" type="button">
+         <i class="fas fa-user-circle text-2xl">
+         </i>
+         <div class="flex flex-col text-left">
+          <span class="font-semibold select-none">
+           Training
+          </span>
+          <span class="text-xs text-gray-400 select-none">
+           Training
+          </span>
+         </div>
+        </button>
+       </div>
+      </div>
+      <!-- Middle column -->
+      <section aria-label="Statistics" class="col-span-2 border border-gray-300 rounded-lg p-4 space-y-4">
+       <h2 class="font-extrabold text-lg select-none">
+        Statistics
+       </h2>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="space-y-3">
+         <div class="rounded-lg text-white px-4 py-3 bg-gradient-to-r from-black to-blue-700 flex justify-between items-center">
+          <div class="text-sm leading-tight">
+           <p class="select-none">
+            Total Experiments Conducted
+           </p>
+           <p class="text-xs font-light select-none">
+            this Week
+           </p>
+          </div>
+          <span class="text-3xl font-extrabold select-none">
+           7
+          </span>
+         </div>
+         <div class="rounded-lg text-white px-4 py-3 bg-gradient-to-r from-black to-blue-700 flex justify-between items-center">
+          <div class="text-sm leading-tight">
+           <p class="select-none">
+            Total Experiments Conducted
+           </p>
+           <p class="text-xs font-light select-none">
+            this Month
+           </p>
+          </div>
+          <span class="text-3xl font-extrabold select-none">
+           21
+          </span>
+         </div>
+         <div class="rounded-lg text-white px-4 py-3 bg-gradient-to-r from-black to-red-900 flex justify-between items-center">
+          <div class="text-sm leading-tight">
+           <p class="select-none">
+            Incidents Occurred
+           </p>
+           <p class="text-xs font-light select-none">
+            this Month
+           </p>
+          </div>
+          <span class="text-3xl font-extrabold select-none">
+           1
+          </span>
+         </div>
+        </div>
+        <div class="space-y-3">
+         <div class="rounded-lg bg-gray-700 text-white px-4 py-3 flex justify-between items-center">
+          <div class="text-sm leading-tight">
+           <p class="select-none">
+            Total Researchers
+           </p>
+           <p class="text-xs font-light select-none">
+            Scientific Research Dept.
+           </p>
+          </div>
+          <span class="text-3xl font-extrabold select-none">
+           79
+          </span>
+         </div>
+         <div class="rounded-lg bg-gray-700 text-white px-4 py-3 flex justify-between items-center">
+          <div class="text-sm leading-tight">
+           <p class="select-none">
+            Total
+           </p>
+           <p class="text-xs font-light select-none">
+            this Month
+           </p>
+          </div>
+          <span class="text-3xl font-extrabold select-none">
+           2
+          </span>
+         </div>
+         <div class="rounded-lg bg-gray-700 text-white px-4 py-3 flex justify-between items-center">
+          <div class="text-sm leading-tight">
+           <p class="select-none">
+            Total Experiments Conducted
+           </p>
+           <p class="text-xs font-light select-none">
+            this Week
+           </p>
+          </div>
+          <span class="text-3xl font-extrabold select-none">
+           7
+          </span>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Notifications -->
+      <section aria-label="Notifications" class="col-span-2 bg-gray-100 border border-gray-300 rounded-lg p-6 space-y-4 max-w-4xl">
+       <h2 class="font-extrabold text-lg select-none">
+        Notifications
+       </h2>
+       <p class="select-none">
+        <strong>
+         Announcement
+        </strong>
+        by Professor Anthony Rivel
+       </p>
+       <hr class="border-gray-300"/>
+       <p class="text-sm leading-relaxed">
+        URGENT NOTICE: Containment Protocols Activated for Biohazard Class-B
+              Outbreak
+       </p>
+       <p class="text-sm leading-relaxed">
+        This is an official directive from the Scientific Research Council in
+              response to a confirmed breach involving Biohazard Class-B Agent “VX-9
+              Mycoplasmoid Variant” at Site-44 on May 15, 2025, at approximately
+              02:30 GMT.
+       </p>
+       <div class="flex justify-end space-x-3">
+        <button class="border border-gray-600 rounded px-6 py-1 text-xs tracking-widest font-mono select-none hover:bg-gray-200" type="button">
+         Ignore
+        </button>
+        <button class="bg-gray-700 text-white rounded px-6 py-1 text-xs tracking-widest font-mono select-none hover:bg-gray-800" type="button">
+         Read More
+        </button>
+       </div>
+      </section>
+      <!-- Radio -->
+      <section aria-label="Radio" class="border border-gray-300 rounded-lg p-6 max-w-md max-h-[280px] overflow-y-auto scrollbar-thin">
+       <h2 class="font-extrabold text-lg select-none mb-4">
+        Radio
+       </h2>
+       <div class="space-y-4 text-sm">
+        <div class="flex justify-between">
+         <div>
+          <strong class="select-none">
+           Sr. Researcher Dylan Vidinha
+          </strong>
+          <p class="select-none">
+           Umm I think I’ve messed up something.
+          </p>
+         </div>
+         <span class="select-none">
+          01:31
+         </span>
+        </div>
+        <div class="flex justify-between">
+         <div>
+          <strong class="select-none">
+           Jr. Researcher Kenneth Couture
+          </strong>
+          <p class="select-none">
+           What did you do...
+          </p>
+         </div>
+         <span class="select-none">
+          01:32
+         </span>
+        </div>
+        <div class="flex justify-between">
+         <div>
+          <strong class="select-none">
+           Sr. Researcher Dylan Vidinha
+          </strong>
+          <p class="select-none">
+           Welllll... one of the Class-D is dead now.
+          </p>
+         </div>
+         <span class="select-none">
+          01:32
+         </span>
+        </div>
+        <div class="flex justify-between">
+         <div>
+          <strong class="select-none">
+           Sr. Researcher Dylan Vidinha
+          </strong>
+          <p class="text-red-800 font-bold select-none">
+           Researcher pressed PANIC BUTTON at Sector 3
+          </p>
+         </div>
+         <span class="select-none">
+          01:33
+         </span>
+        </div>
+       </div>
+      </section>
+     </div>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
